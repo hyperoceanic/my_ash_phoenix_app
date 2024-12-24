@@ -8,7 +8,7 @@
 import Config
 
 config :my_ash_phoenix_app,
-  ash_domains: [MyAshPhoenixApp.Blog]
+  ash_domains: [MyAshPhoenixApp.Accounts, MyAshPhoenixApp.Blog]
 
 config :ash,
   include_embedded_source_by_default?: false,
@@ -21,6 +21,8 @@ config :spark,
     remove_parens?: true,
     "Ash.Resource": [
       section_order: [
+        :authentication,
+        :tokens,
         :postgres,
         :resource,
         :code_interface,
