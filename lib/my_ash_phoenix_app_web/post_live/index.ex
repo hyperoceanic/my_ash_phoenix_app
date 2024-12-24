@@ -21,7 +21,6 @@ defmodule MyAshPhoenixAppWeb.PostLive.Index do
       <:col :let={{_id, post}} label="Id">{post.id}</:col>
       <:col :let={{_id, post}} label="Title">{post.title}</:col>
 
-
       <:action :let={{_id, post}}>
         <div class="sr-only">
           <.link navigate={~p"/posts/#{post}"}>Show</.link>

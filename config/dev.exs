@@ -63,7 +63,9 @@ config :my_ash_phoenix_app, MyAshPhoenixAppWeb.Endpoint,
   ]
 
 # Enable dev routes for dashboard and mailbox
-config :my_ash_phoenix_app, dev_routes: true
+config :my_ash_phoenix_app,
+  dev_routes: true,
+  token_signing_secret: "ciijIw5Xp5v6VRV9T6xjHRuLgcz2c9E9"
 
 # Do not include metadata nor timestamps in development logs
 config :logger, :console, format: "[$level] $message\n"

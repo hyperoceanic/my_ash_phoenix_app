@@ -1,4 +1,5 @@
 import Config
+config :my_ash_phoenix_app, token_signing_secret: "koeoZVyuoc9pnecteny5AfqdH/2atc1d"
 config :ash, disable_async?: true
 
 # Configure your database

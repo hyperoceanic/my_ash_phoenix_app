@@ -18,7 +18,8 @@ defmodule MyAshPhoenixApp.Application do
       # Start a worker by calling: MyAshPhoenixApp.Worker.start_link(arg)
       # {MyAshPhoenixApp.Worker, arg},
       # Start to serve requests, typically the last entry
-      MyAshPhoenixAppWeb.Endpoint
+      MyAshPhoenixAppWeb.Endpoint,
+      {AshAuthentication.Supervisor, [otp_app: :my_ash_phoenix_app]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
