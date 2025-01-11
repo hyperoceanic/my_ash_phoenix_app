@@ -1,0 +1,8 @@
+<.header>
+  Edit Test page {@test_page.id}
+  <:subtitle>Use this form to manage test_page records in your database.</:subtitle>
+</.header>
+
+<.test_page_form changeset={@changeset} action={~p"/test_pages/#{@test_page}"} />
+
+<.back navigate={~p"/test_pages"}>Back to test_pages</.back>

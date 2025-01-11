@@ -64,6 +64,8 @@ defmodule MyAshPhoenixAppWeb.Router do
                   MyAshPhoenixAppWeb.AuthOverrides,
                   AshAuthentication.Phoenix.Overrides.Default
                 ]
+
+    resources "/test_pages", TestPageController
   end
 
   # Other scopes may use custom stacks.

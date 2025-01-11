@@ -1,0 +1,15 @@
+<.header>
+  Test page {@test_page.id}
+  <:subtitle>This is a test_page record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/test_pages/#{@test_page}/edit"}>
+      <.button>Edit test_page</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Test">{@test_page.test}</:item>
+</.list>
+
+<.back navigate={~p"/test_pages"}>Back to test_pages</.back>
